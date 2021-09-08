@@ -2,5 +2,15 @@ import React from "react";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  return <div className="Dictionary">Hello from Dictionary</div>;
+  function search() {
+    alert("searching");
+  }
+
+  return (
+    <div className="Dictionary">
+      <form onSubmit={search}>
+        <input type="search" />
+      </form>
+    </div>
+  );
 }
